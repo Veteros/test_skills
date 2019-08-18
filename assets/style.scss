@@ -11,23 +11,28 @@ body {
 .page {
   display: grid;
   grid-template-areas:
-  "header header header"
-  ".article .adds"
-  "footer footer footer";
+          "header header header header"
+          "main main main article"
+          "footer footer footer footer";
+
+  & .header {
+    grid-area: header;
+    border: 1px solid red;
+  }
+
+  & .main {
+    grid-area: main;
+    border: 1px solid green;
+  }
+
+  & .article {
+    grid-area: article;
+    border: 1px solid yellow;
+  }
+
+  & .footer {
+    grid-area: footer;
+    border: 1px solid grey;
+  }
 }
 
-.header {
-  border: 1px solid red;
-}
-
-.article {
-  border: 1px solid yellow;
-}
-
-.adds {
-  border: 1px solid green;
-}
-
-.header {
-  border: 1px solid black;
-}
