@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  display: grid;
+  grid-template-areas:
+  "header header header"
+  ".article .adds"
+  "footer footer footer";
+}
+
+.header {
+  border: 1px solid red;
+}
+
+.article {
+  border: 1px solid yellow;
+}
+
+.adds {
+  border: 1px solid green;
+}
+
+.header {
+  border: 1px solid black;
+}
